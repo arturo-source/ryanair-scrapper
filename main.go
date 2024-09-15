@@ -271,16 +271,16 @@ func main() {
 		panic(err)
 	}
 
-	fmt.Println(config)
-
 	msg, err := calculate(config.Origins, config.Destinations, config.Dates)
 	if err != nil {
 		panic(err)
 	}
 
 	fmt.Println(msg)
-	err = SendMessage(msg, config.TelegramToken, config.TelegramChatId)
-	if err != nil {
-		panic(err)
+	if config.TelegramToken != "" && config.TelegramChatId != "" {
+		err = SendMessage(msg, config.TelegramToken, config.TelegramChatId)
+		if err != nil {
+			panic(err)
+		}
 	}
 }
