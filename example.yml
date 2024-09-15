@@ -1,0 +1,16 @@
+dates:
+  - 2024-12-10
+  - 2024-12-11
+  - 2024-12-12
+
+origins:
+  - ALC
+  - VLC
+
+destinations:
+  - LGW
+  - LTN
+  - STN
+
+telegramToken: 2134567:AASDas_Rsdfadfadas
+telegramChatId: -300564655654
